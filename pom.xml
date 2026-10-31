@@ -60,6 +60,19 @@
           </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>jboss-public-releases</id>
+            <url>https://repository.jboss.org/nexus/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <build>
 
         <pluginManagement>
