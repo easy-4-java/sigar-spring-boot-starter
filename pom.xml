@@ -60,6 +60,19 @@
           </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>jboss-public-releases</id>
+            <url>https://repository.jboss.org/nexus/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <build>
 
         <pluginManagement>
@@ -464,13 +477,13 @@
             </dependency>
             <!-- https://mvnrepository.com/artifact/com.github.hiwepy/sigar-native -->
             <dependency>
-                <groupId>io.github.hiwepy</groupId>
+                <groupId>com.github.hiwepy</groupId>
                 <artifactId>sigar-native</artifactId>
                 <version>${sigar-native.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/com.github.hiwepy/metrics-sigar2 -->
             <dependency>
-                <groupId>io.github.hiwepy</groupId>
+                <groupId>com.github.hiwepy</groupId>
                 <artifactId>metrics-sigar2</artifactId>
                 <version>${sigar-metrics.version}</version>
             </dependency>
@@ -552,12 +565,12 @@
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.github.hiwepy/sigar-native -->
         <dependency>
-            <groupId>io.github.hiwepy</groupId>
+            <groupId>com.github.hiwepy</groupId>
             <artifactId>sigar-native</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.github.hiwepy/metrics-sigar2 -->
         <dependency>
-            <groupId>io.github.hiwepy</groupId>
+            <groupId>com.github.hiwepy</groupId>
             <artifactId>metrics-sigar2</artifactId>
         </dependency>
 
